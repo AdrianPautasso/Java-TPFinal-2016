@@ -84,7 +84,8 @@ public class Login extends HttpServlet {
 							u.setIntentos(0);
 							cu.Update(u);
 							session.setAttribute("usuario", u);	
-							response.getWriter().write("<script>window.location.href = 'gestionUsuario.jsp';</script>");	
+							//response.getWriter().write("<script>window.location.href = 'gestionUsuario.jsp';</script>");	
+							response.getWriter().write("<script>window.location.href = 'index.html';</script>");
 						}	
 					}
 					else if((u!=null)&&(u.getEstado()==false))
