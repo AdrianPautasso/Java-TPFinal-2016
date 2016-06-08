@@ -47,7 +47,7 @@ public class Login extends HttpServlet {
 	
 	
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		Usuario u = new Usuario();
+		Cliente u = new Cliente();
 		String usuario = request.getParameter("txtUsuario");
 		String pin = request.getParameter("txtPIN");
 		HttpSession session = request.getSession();		

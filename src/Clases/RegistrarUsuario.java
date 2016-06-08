@@ -37,7 +37,7 @@ public class RegistrarUsuario extends HttpServlet implements Servlet {
 	}
 
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		Usuario u = new Usuario();
+		Cliente u = new Cliente();
 		
 		String usuario = request.getParameter("txtNombreUsuario");
 		String PIN = request.getParameter("txtPIN");

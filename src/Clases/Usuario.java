@@ -1,19 +1,20 @@
 package Clases;
 
 public class Usuario {
-	private String nombre_usuario;
-	private String pin;
-	private double saldo_ctaCte;
-	private double saldo_cajaAhorro;
-	private boolean estado;
+
+	private String dni_cliente;
 	private int id;
+	private String tipo;
+	private String contrasena;
 	private int intentos;
+	private Boolean bloqueado;
+	private Boolean baja;
 	
-	public int getIntentos() {
-		return intentos;
+	public String getDni_cliente() {
+		return dni_cliente;
 	}
-	public void setIntentos(int intentos) {
-		this.intentos = intentos;
+	public void setDni_cliente(String dni_cliente) {
+		this.dni_cliente = dni_cliente;
 	}
 	public int getId() {
 		return id;
@@ -21,47 +22,45 @@ public class Usuario {
 	public void setId(int id) {
 		this.id = id;
 	}
-	public boolean getEstado() {
-		return estado;
+	public String getTipo() {
+		return tipo;
 	}
-	public void setEstado(boolean estado) {
-		this.estado = estado;
+	public void setTipo(String tipo) {
+		this.tipo = tipo;
 	}
-	public String getNombre_usuario() {
-		return nombre_usuario;
+	public String getContrasena() {
+		return contrasena;
 	}
-	public void setNombre_usuario(String nombreUsuario) {
-		nombre_usuario = nombreUsuario;
+	public void setContrasena(String contrasena) {
+		this.contrasena = contrasena;
 	}
-	public String getPin() {
-		return pin;
+	public int getIntentos() {
+		return intentos;
 	}
-	public void setPin(String pin) {
-		this.pin = pin;
+	public void setIntentos(int intentos) {
+		this.intentos = intentos;
 	}
-	public double getSaldo_ctaCte() {
-		return saldo_ctaCte;
+	public Boolean getEstado() {
+		return bloqueado;
 	}
-	public void setSaldo_ctaCte(double saldo_ctaCte) {
-		this.saldo_ctaCte = saldo_ctaCte;
+	public void setEstado(Boolean estado) {
+		this.bloqueado = estado;
 	}
-	public double getSaldo_cajaAhorro() 
-	{
-		return saldo_cajaAhorro;
+	public Boolean getBaja() {
+		return baja;
 	}
-	public void setSaldo_cajaAhorro(double saldo_cajaAhorro) {
-		this.saldo_cajaAhorro = saldo_cajaAhorro;
+	public void setBaja(Boolean baja) {
+		this.baja = baja;
 	}
-	public Usuario(String nombre_usuario, String pin, double saldo_ctaCte,
-			double saldo_cajaAhorro) {
+	public Usuario(String dni_cliente, int id, String tipo, String contrasena) {
 		super();
-		this.nombre_usuario = nombre_usuario;
-		this.pin = pin;
-		this.saldo_ctaCte = saldo_ctaCte;
-		this.saldo_cajaAhorro = saldo_cajaAhorro;
+		this.dni_cliente = dni_cliente;
+		this.id = id;
+		this.tipo = tipo;
+		this.contrasena = contrasena;
+		this.intentos = 0;
+		this.bloqueado = false;
+		this.baja = false;
 	}
-	public Usuario() {
-		super();
-	}
-
+	
 }

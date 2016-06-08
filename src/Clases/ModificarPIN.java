@@ -39,7 +39,7 @@ public class ModificarPIN extends HttpServlet {
 		String sPinActual = request.getParameter("txtPINActual");
 		String sPinNuevo = request.getParameter("txtNuevoPIN");
 		int id = Integer.parseInt(request.getParameter("idUsuario"));
-		Usuario u = new Usuario();
+		Cliente u = new Cliente();
 		CatalogoUsuario cu = new CatalogoUsuario();
 		boolean error = true;
 		

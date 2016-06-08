@@ -1,7 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
-    pageEncoding="ISO-8859-1" import="Clases.Usuario" %>
+    pageEncoding="ISO-8859-1" import="Clases.Cliente" %>
 <%
-	Usuario usuario = (Usuario)session.getAttribute("usuario"); 
+	Cliente usuario = (Cliente)session.getAttribute("usuario"); 
 	int id = usuario.getId();
 %> 
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">

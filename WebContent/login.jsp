@@ -165,10 +165,9 @@
 		<br>
 		
 		<form id="formBuscar" method="post" action="Login" class="login">
-			<input type="text" placeholder="usuario" name="txtUsuario"> <br>
-			<input type="password" placeholder="contraseña" name="txtPIN"> <br>
+			<input type="text" placeholder="Documento" name="txtUsuario"> <br>
+			<input type="password" placeholder="Contraseña" name="txtPIN"> <br>
 			<input type="submit" value="Iniciar sesión"> <br>
-			<a href="registrarUsuario.jsp">Registrar nuevo usuario</a>
 		</form>	
 				
     <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
